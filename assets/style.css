@@ -1,0 +1,81 @@
+:root {
+    --magenta: magenta;
+    --borderRadius: 15px;
+    --backgroundColor: rgb(63, 63, 63);
+    --white: white;
+    --borderWidth: 1px;
+    --cardHeader: 40px;
+}
+
+h1 {
+    font-size: 75px;
+    text-align: center;
+    display: flex;
+    color: var(--magenta);
+    justify-content: center;
+    margin-top: 15px;
+}
+
+body {
+    background: var(--backgroundColor);
+}
+
+header p {
+    font: 30px;
+    display: flex;
+    text-align: center;
+    margin: 30px;
+    color: var(--white);
+    justify-content: center;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.card-header {
+    color: var(--magenta);
+    font-size: var(--cardHeader);
+    border: solid var(--white);
+    border-width: var(--borderWidth);
+    border-radius: var(--borderRadius);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.card-column {
+    width: 30%;
+    display: flex;
+    border: dashed;
+    border-color: var(--white);
+    flex-wrap: wrap;
+    flex-direction: column;
+    border-width: var(--borderWidth);
+    width: 30%;
+}
+
+.code-block {
+    background: linear-gradient(purple, magenta);
+    border-radius: var(--borderRadius);
+}
+
+.card-body {
+    color: var(--magenta)
+}
+
+@media(max-width: 992px) {
+    .card-column {
+        width: 47%;
+    }
+}
+
+@media (min-width: 768px) {
+    .card-column {
+        width: 97%;
+    }
+}
